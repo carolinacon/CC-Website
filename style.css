@@ -7,7 +7,7 @@
   --dark-yellow: #e1b618;
   --primary-yellow: #dec120;
   --light-yellow: #f6d723;
-  --dark-purple: #1b1041;
+  --dark-purple: #261957;
   --light-purple: #2d1d5b;
 }
 
@@ -58,22 +58,22 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 1.5rem;
   margin-top: 5rem;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 2rem;
-  margin-top: 5rem;
+  font-size: 2.8rem;
+  margin-top: 3rem;
   margin-bottom: 1.5rem;
 }
 
 h4 {
   font-size: 2rem;
   text-transform: uppercase;
-  margin-top: 5rem;
+  margin-top: 3.2rem;
   margin-bottom: 1.5rem;
 }
 
@@ -233,7 +233,7 @@ li:last-child {
 }
 
 .announcement-info {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.5;
   margin-bottom: 0.8rem;
 }
@@ -294,14 +294,14 @@ footer {
 
 #matrix-logo {
   background-size: cover;
-  background-image: url("matrix_logo.png");
+  background-image: url("imgs/matrix_logo.png");
   height: 3rem;
   width: 6rem;
   margin-left: -1.3rem;
 }
 
 #matrix-logo:hover {
-  background-image: url("matrix_logo-yellow.png");
+  background-image: url("imgs/matrix_logo-yellow.png");
 }
 
 .socials-link:link,
