@@ -180,7 +180,7 @@ li:last-child {
 
 /* Hero Section */
 .hero {
-  padding: 0;
+  padding: 1rem 0 0 0;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -317,11 +317,6 @@ footer {
 /* BELOW 1344px (Smaller desktops) */
 /**************************/
 @media (max-width: 84em) {
-  .hero-img {
-    height: 80rem;   
-    object-fit: cover; 
-    object-position: center;
-  }
 }
 
 /**************************/
@@ -335,12 +330,6 @@ footer {
 
   .main-nav {
     margin-left: 0;
-  }
-
-  .hero-img {
-    height: 50rem;   
-    object-fit: cover; 
-    object-position: center;
   }
 
   article {
@@ -397,7 +386,7 @@ footer {
 /**************************/
 @media (max-width: 34em) {
   .hero-img {
-    height: 40rem;   
+    height: 40vh;   
     object-fit: cover; 
     object-position: center;
   }
