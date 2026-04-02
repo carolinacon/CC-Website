@@ -105,7 +105,7 @@ a:active {
 .btn {
   display: block;
   border-radius: 1.5rem;
-  padding: 1rem 1rem;
+  padding: 0.8rem 1rem;
 }
 
 .btn-primary:link,
@@ -144,7 +144,7 @@ li:last-child {
   background-color: var(--primary-black);
   position: sticky;
   top: 0;
-  padding: 1.2rem 2.5rem;
+  padding: 0.3rem 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -161,7 +161,7 @@ li:last-child {
 .main-nav-list {
   align-items: center;
   display: flex;
-  padding-top: 3rem;
+  padding-top: 2rem;
   gap: 3rem;
 }
 
@@ -182,16 +182,19 @@ li:last-child {
 .hero {
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  background-color: #000000;
 }
 
 .hero-img {
-  width: 100%;
+  width: 90%;
 }
 
 /* Announcements Section */
 .announcements-header {
-  margin-top: 1rem;
+  margin-top: 0;
   margin-bottom: 3rem;
 }
 
@@ -310,12 +313,15 @@ footer {
   font-weight: 500;
 }
 
-/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
-
 /**************************/
 /* BELOW 1344px (Smaller desktops) */
 /**************************/
 @media (max-width: 84em) {
+  .hero-img {
+    height: 80rem;   
+    object-fit: cover; 
+    object-position: center;
+  }
 }
 
 /**************************/
@@ -329,6 +335,12 @@ footer {
 
   .main-nav {
     margin-left: 0;
+  }
+
+  .hero-img {
+    height: 50rem;   
+    object-fit: cover; 
+    object-position: center;
   }
 
   article {
@@ -384,6 +396,12 @@ footer {
 /* BELOW 544px (Phones) */
 /**************************/
 @media (max-width: 34em) {
+  .hero-img {
+    height: 40rem;   
+    object-fit: cover; 
+    object-position: center;
+  }
+
   article {
     padding: 8rem 4rem 9.6rem 4rem;
   }
