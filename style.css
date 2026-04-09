@@ -113,7 +113,7 @@ a:active {
   background-color: var(--dark-yellow);
   color: var(--primary-black);
   font-weight: 700;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
 }
 
 .btn-primary:hover,
@@ -170,8 +170,9 @@ li:last-child {
 }
 
 .main-nav-link {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .main-nav-link.active {
@@ -280,7 +281,7 @@ footer {
 
 .footer-text {
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 1rem;
 }
 
@@ -291,16 +292,15 @@ footer {
 }
 
 .socials-list li {
-  /* padding: 1rem 2rem; */
   margin-bottom: 0;
 }
 
 #matrix-logo {
   background-size: cover;
   background-image: url("imgs/matrix_logo.png");
-  height: 3rem;
-  width: 6rem;
-  margin-left: -1.3rem;
+  height: 3.4rem;
+  width: 6.4rem;
+  margin-left: -1rem;
 }
 
 #matrix-logo:hover {
@@ -309,7 +309,7 @@ footer {
 
 .socials-link:link,
 .socials-link:visited {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 500;
 }
 
@@ -350,14 +350,11 @@ footer {
 /* BELOW 704px (Smaller tablets) */
 /**************************/
 @media (max-width: 44em) {
-  article {
-    padding: 8rem 6rem 9.6rem 6rem;
-  }
 
   .main-nav-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 0.5rem;
     justify-items: center;
   }
 
@@ -369,11 +366,16 @@ footer {
     grid-column: span 10;
     padding-left: 1rem;
   }
+  
+  article {
+    padding: 8rem 6rem 9.6rem 6rem;
+  }
 
   .socials-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    gap: 2rem;
   }
 
   #matrix-logo {
