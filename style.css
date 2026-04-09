@@ -1,0 +1,399 @@
+/* Colors */
+:root {
+  --primary-black: #000000;
+  --dark-gray: #0b0d10;
+  --light-gray: #191c23;
+  --primary-white: #e4e5e6;
+  --dark-yellow: #e1b618;
+  --primary-yellow: #dec120;
+  --light-yellow: #f6d723;
+  --dark-purple: #261957;
+  --light-purple: #2d1d5b;
+}
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* Now 1rem = 10px 
+  (10px / 16px default browser font size => .0625 => 62.5%) */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+article {
+  background-color: var(--dark-gray);
+  padding: 8rem 16rem 9.6rem 16rem;
+}
+
+section {
+  background-color: var(--dark-gray);
+  padding: 4.8rem 8rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "STIX Two Text", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 4.5rem;
+  margin-bottom: 4rem;
+  font-weight: 600;
+  color: var(--primary-yellow);
+}
+
+h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 5rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2.8rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 3.2rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+strong {
+  font-weight: 600;
+  padding-right: 0.5rem;
+}
+
+a:link,
+a:visited {
+  color: var(--primary-white);
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: var(--primary-yellow);
+}
+
+.btn {
+  display: block;
+  border-radius: 1.5rem;
+  padding: 0.8rem 1rem;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+  background-color: var(--dark-yellow);
+  color: var(--primary-black);
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: var(--light-yellow);
+}
+
+ul,
+ol {
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* Header */
+.header {
+  background-color: var(--primary-black);
+  position: sticky;
+  top: 0;
+  padding: 0.3rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 6rem;
+}
+
+.main-nav {
+  margin-left: auto;
+}
+
+.main-nav-list {
+  align-items: center;
+  display: flex;
+  padding-top: 2rem;
+  gap: 3rem;
+}
+
+.main-nav-list li {
+  margin: 1rem 0;
+}
+
+.main-nav-link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main-nav-link.active {
+  color: var(--primary-yellow);
+}
+
+/* Hero Section */
+.hero {
+  padding: 1rem 0 0 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+.hero-img {
+  width: 90%;
+}
+
+/* Announcements Section */
+.announcements-header {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+.announcement {
+  border: 2px solid var(--primary-black);
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.351);
+  background-color: var(--dark-purple);
+  border-radius: 12px;
+  padding: 2.4rem;
+}
+
+.announcement.grayed {
+  margin-top: 2rem;
+  background-color: var(--light-gray);
+}
+
+.announcement img {
+  height: 5rem;
+  grid-column: span 1;
+  /* margin: 1rem; */
+  justify-self: center;
+}
+
+.announcement-text {
+  grid-column: 2 / -1;
+}
+
+.announcement-title {
+  grid-column: span 9;
+  margin-top: 1rem;
+  align-self: center;
+  font-family: "STIX Two Text", serif;
+  font-size: 2.3rem;
+  font-weight: 500;
+  letter-spacing: 0.1;
+}
+
+.announcement-info {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.announcement-link {
+  font-size: 1.3rem;
+}
+
+/* Pages */
+article a:link,
+article a:visited {
+  color: var(--primary-yellow);
+}
+
+article a:hover,
+article a:active {
+  text-decoration: underline;
+}
+
+h4.socials-link:link,
+.socials-link:visited {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+h4 img {
+  display: inline;
+}
+
+/* Footer */
+footer {
+  padding: 4rem 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-black);
+}
+
+.footer-text {
+  font-weight: 300;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.socials-list {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.socials-list li {
+  margin-bottom: 0;
+}
+
+#matrix-logo {
+  background-size: cover;
+  background-image: url("imgs/matrix_logo.png");
+  height: 3.4rem;
+  width: 6.4rem;
+  margin-left: -1rem;
+}
+
+#matrix-logo:hover {
+  background-image: url("imgs/matrix_logo-yellow.png");
+}
+
+.socials-link:link,
+.socials-link:visited {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+@media (max-width: 84em) {
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+  .header {
+    position: static;
+    flex-direction: column;
+  }
+
+  .main-nav {
+    margin-left: 0;
+  }
+
+  article {
+    padding: 8rem 12rem 9.6rem 12rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+@media (max-width: 44em) {
+
+  .main-nav-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    justify-items: center;
+  }
+
+  .main-nav-list li:last-child {
+    grid-column: span 2;
+  }
+
+  .announcement-text {
+    grid-column: span 10;
+    padding-left: 1rem;
+  }
+  
+  article {
+    padding: 8rem 6rem 9.6rem 6rem;
+  }
+
+  .socials-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  #matrix-logo {
+    margin-left: 0;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+@media (max-width: 34em) {
+  .hero-img {
+    height: 40vh;   
+    object-fit: cover; 
+    object-position: center;
+  }
+
+  article {
+    padding: 8rem 4rem 9.6rem 4rem;
+  }
+}
