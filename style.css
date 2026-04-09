@@ -295,6 +295,17 @@ footer {
   margin-bottom: 0;
 }
 
+#mastodon-logo {
+  background-size: cover;
+  background-image: url("imgs/mastadon-logo-white.png");
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+#mastodon-logo:hover {
+  background-image: url("imgs/mastadon-logo-yellow.png");
+}
+
 #matrix-logo {
   background-size: cover;
   background-image: url("imgs/matrix_logo.png");
@@ -376,6 +387,10 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     gap: 2rem;
+  }
+
+  .socials-link:link {
+    padding: 1rem 2rem;
   }
 
   #matrix-logo {
