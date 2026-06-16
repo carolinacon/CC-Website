@@ -140,6 +140,26 @@ li:last-child {
 }
 
 /* Header */
+.banner {
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--dark-yellow);
+  font-size: 1.5rem;
+  font-weight: 500;
+  
+}
+
+.banner-link:link,
+.banner-link:visited {
+  color: var(--primary-black);
+}
+
+.banner-link:hover,
+.banner-link:active {
+  color: var(--primary-white);
+}
+
 .header {
   background-color: var(--primary-black);
   position: sticky;
