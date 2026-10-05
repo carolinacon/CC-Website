@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="../style.css" />
     <link rel="icon" type="image/x-icon" href="../imgs/hat-favicon.png" />
+    <script type="text/javascript" src="https://pretalx.com/democon/schedule/widget/v2.en.js"></script>
     <title>CarolinaCon 2026</title>
   </head>
   <body>
@@ -45,7 +46,36 @@
       <header class="post-header">
         <h1 class="post-title">Schedule</h1>
       </header>
-      <h2>🕸️ <i>Nothing to see here yet!</i></h2>
+      <pretalx-schedule event-url="https://pretalx.com/democon/" locale="en" style="--pretalx-clr-primary: #3aa57c"></pretalx-schedule>
+      <noscript>
+        <div class="pretalx-widget">
+          <div class="pre-release-container">
+              <p id="js-message">
+                  It seems JavaScript is disabled in your browser. <br/> You can enable it and refresh, or access the schedule without JavaScript below:
+              </p>
+              <input type="checkbox" id="release-trigger">
+              <label for="release-trigger" class="release-btn-label">Take me there!</label>
+          </div>
+
+              <div class="release-container">
+                <div class="release-char char1"><img src="../imgs/release-char-white.gif"/></div>
+                <div class="release-char char2"><img src="../imgs/release-char-white.gif" /></div>
+                <div class="release-char char3"><img src="../imgs/release-char-white.gif" /></div>
+                <div class="release-char char4"><img src="../imgs/release-char-white.gif" /></div>
+                <div class="release-char char5"><img src="../imgs/release-char-white.gif" /></div>
+                <div class="release-char char6"><img src="../imgs/release-char-white.gif" /></div>
+                <div class="release-char char7"><img src="../imgs/release-char-white.gif" /></div>
+                <div class="release-char char8"><img src="../imgs/release-char-white.gif" /></div>
+              </div>
+
+              <div class="post-release-container">
+                <p id="post-release-text">Oops! Our bad... wrong spell <em>(though this may be interesting for the game afoot)</em>. <br/>Clicking below will get you to the right place.</p>
+
+                <a href="https://trivia.carolinacon.org" target="_blank" id="view-schedule-link"><img src="../imgs/trivia-play-btn.png" alt="Trivia Play button" class="event-btn shimmer" id="view-schedule-btn"/></a>
+              </div>
+              
+          </div>
+      </noscript>
     </article>
 
      <footer>
