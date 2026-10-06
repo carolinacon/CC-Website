@@ -2,7 +2,9 @@
 :root {
   --primary-black: #000000;
   --dark-gray: #0b0d10;
-  --light-gray: #191c23;
+  --mid-gray: #191c23;
+  --light-gray: #484b52;
+  --lightest-gray: #c1c1c2;
   --primary-white: #e4e5e6;
   --dark-yellow: #e1b618;
   --primary-yellow: #dec120;
@@ -114,11 +116,37 @@ a:active {
   color: var(--primary-black);
   font-weight: 700;
   font-size: 1.9rem;
+  text-decoration: none;
+}
+
+.btn-secondary:link,
+.btn-secondary:visited {
+  background-color: var(--dark-yellow);
+  color: var(--primary-black);
+  font-weight: 600;
+  font-size: 1.7rem;
+  text-decoration: none;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.btn-secondary.expired:link,
+.btn-secondary.expired:visited {
+  background-color: var(--light-gray);
+  color: var(--primary-white);
+  font-weight: 500;
 }
 
 .btn-primary:hover,
-.btn-primary:active {
+.btn-secondary:hover,
+.btn-primary:active,
+.btn-secondary:active {
   background-color: var(--light-yellow);
+}
+
+.btn-secondary.expired:hover,
+.btn-secondary.expired:active {
+  background-color: var(--lightest-gray);
+  color: var(--primary-black);
 }
 
 .event-btn {
@@ -248,7 +276,7 @@ li:last-child {
 
 .announcement.grayed {
   margin-top: 2rem;
-  background-color: var(--light-gray);
+  background-color: var(--mid-gray);
 }
 
 .announcement img {
